@@ -1,5 +1,4 @@
 node_modules
-lib
 coverage
 # Ignore all the files inside the node_modules folder
 data/**/*.*

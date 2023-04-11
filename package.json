@@ -10,7 +10,8 @@
     "test": "jest",
     "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
     "prepublish": "npm run build",
-    "lint": "eslint index.ts __test__ --fix"
+    "lint": "eslint index.ts __test__ --fix",
+    "postinstall": ""
   },
   "author": "harpreetkhalsagtbit@gmail.com",
   "license": "GPL-3.0",
@@ -21,7 +22,11 @@
     "type": "git",
     "url": "git+https://github.com/harpreetkhalsagtbit/country-state-city.git"
   },
-
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build"
+    }
+  },
   "keywords": [
     "Country",
     "State",
