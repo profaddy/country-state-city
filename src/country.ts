@@ -14,7 +14,7 @@ function getAllCountries(): ICountry[] {
 	return countryList;
 }
 
-export default {
+export {
 	getCountryByCode,
 	getAllCountries,
 };

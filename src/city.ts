@@ -29,7 +29,7 @@ function getCitiesOfCountry(countryCode: string): ICity[] | undefined {
 	return cities.sort(compare);
 }
 
-export default {
+export {
 	getAllCities,
 	getCitiesOfState,
 	getCitiesOfCountry,

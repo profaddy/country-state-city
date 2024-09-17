@@ -34,9 +34,4 @@ export function getStateByCode(isoCode: string): IState | undefined {
 
 	return findEntryByCode(stateList, isoCode);
 }
-export default {
-	getAllStates,
-	getStatesOfCountry,
-	getStateByCodeAndCountry,
-	getStateByCode,
-};
+
